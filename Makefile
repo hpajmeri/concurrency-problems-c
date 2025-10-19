@@ -82,7 +82,7 @@ run-all: $(ALL_TESTS)
 	@echo "=========================================="
 	$(BARBER_TEST)
 	@echo ""
-	@echo "(Building H2O test removed)"
+
 
 # Run individual tests
 run-pc: $(PC_TEST)
@@ -97,11 +97,11 @@ run-cs: $(CS_TEST)
 run-barber: $(BARBER_TEST)
 	$(BARBER_TEST)
 
-# run-h2o target removed (test intentionally omitted)
+# (run target intentionally removed)
 
 # Clean build artifacts
 clean:
 	rm -rf $(BUILD_DIR) $(BIN_DIR)
 
 # Phony targets
-.PHONY: all run-all run-pc run-rw run-cs run-barber run-h2o clean
+.PHONY: all run-all run-pc run-rw run-cs run-barber clean
